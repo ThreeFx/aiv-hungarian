@@ -12,10 +12,11 @@ public class Main {
 
         // TODO Some projects allow more than one student.
         //      Solution: create multiple columns per assignment.
-        //      Of course, this has a global maxmium.
+        //      Of course, this has a global maximum.
         //      Consult Jonathan which maximum.
 
-        Hungarian problem = new Hungarian(people, assignments, wishes);
+        // ------------------------------------------------------- ask about penalty
+        Hungarian problem = new Hungarian(people, assignments, wishes, 1000);
         problem.solve();
         problem.output();
     }
