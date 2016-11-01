@@ -17,8 +17,7 @@ public class Main {
 
         // ------------------------------------------------------- ask about penalty
         Hungarian problem = new Hungarian(people, assignments, wishes, 1000);
-        problem.solve();
-        problem.output();
+        problem.printSolution();
     }
 
     private static String[] readFile(String fileName) throws FileNotFoundException {
